@@ -1,0 +1,181 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken", sans-serif;
+}
+
+:root {
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+    font-family: "Hanken";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+/* Bloc results */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+#result {
+    background: linear-gradient(#6945ff, #312ce9);
+    width: 250px;
+    color: white;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+#result h1 {
+    color: var(--LightLavender);
+    margin-bottom: 1em;
+    padding-top: 0.2em;
+}
+
+#round {
+    height: 11em;
+    width: 11em;
+    border-radius: 10em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    background: linear-gradient(#4c23ca, #4734f0);
+    display: flex;
+    flex-direction: column;
+}
+
+#result h2 {
+    padding-top: 0.6em;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#round p {
+    color: hsla(241, 100%, 89%, 0.5);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#result h3 {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+#text {
+    text-align: center;
+    padding: 0.5em 0.7em 1.5em 0.7em;
+    color: var(--LightLavender);
+    font-weight: bold;
+}
+
+
+/* Bloc summary */
+
+#summary {
+    width: 270px;
+    border-radius: 0em 1.5em 1.5em 0em;
+    padding: 2em 2em 2em 3em;
+    box-shadow: 1px 10px 30px rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -20px;
+}
+
+#summary h4 {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#summary h5 {
+    padding-left: 0.7em;
+    font-size: 1.1em;
+}
+
+.scoreLine {
+    color: hsla(224, 30%, 27%, 0.6);
+    font-weight: 700;
+}
+
+.scoreLine strong {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.logoLine{
+    display: flex;
+}
+
+.l1, .l2, .l3, .l4 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    padding: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.l1 h5{
+    color: var(--LightRed);
+
+}
+
+.l2 {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.l2 h5 {
+    color:  var(--OrangeYellow);
+}
+
+.l3 {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.l3 h5 {
+    color: var(--GreenTeal);
+}
+
+.l4 {
+    background-color: hsla(241, 81%, 54%, 0.1);
+}
+
+.l4 h5 {
+    color: var(--LightRoyalBlue);
+}
+
+button {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 2em;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #303b59;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border: none;
+}
